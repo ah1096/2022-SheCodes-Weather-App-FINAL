@@ -12,8 +12,9 @@
 </head>
 <body>
     <div class="container">
-
+<div class="weather-app-wrapper">
 <div class="weather-app">
+    <div class="overview">
     <h1>
         New York
     </h1>
@@ -22,15 +23,19 @@
         <li>Friday, 10:00</li>
         <li>Clear</li>
     </ul>
-    
+    </div>
 
         <div class="row">
             <div class="col-6">
-                <img id= image src="images/sunglasses.png" alt="yellow sun with sunglasses">
-            12°C | °F
+                    <div class="clearfix weather-temperature">
+                       <img id= image src="images/sunglasses.png" 
+                       alt="yellow sun with sunglasses" 
+                       class="float-left">
+                    <div class="float-left">
+                            <strong>12</strong><span class = "units">°C | <a href="#"> °F </a> </span>
+                    </div>
+                    </div>
             </div>
-
-        
 
             <div class="col-6">
                 <ul>
@@ -43,14 +48,16 @@
 
     </ul>
 
+ 
+
+</div>
     <small>
         <a href="https://github.com/ah1096/2022-SheCodes-Weather-App-FINAL" target="_blank">
             Open-source code</a>
         by Alyssa H
     </small>
-    
-</div>
 
+</div>
 
 
 <script href="src/app.js"></script>    
