@@ -1,3 +1,29 @@
-h1 {color:pink;}
+body {font-family:Arial, Helvetica, sans-serif;}
 
-img {width: 200px;}
+
+.weather-app {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 1px solid pink;
+    border-radius: 10px;
+}
+
+h1 {
+    color:pink;
+    margin-bottom: 0;
+}
+
+img {
+    width: 100px;
+}
+
+ul{
+    margin: 0; 
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    color: grey;
+}
