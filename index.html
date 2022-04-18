@@ -13,44 +13,54 @@
 </head>
 <body>
     <div class="container">
-<div class="weather-app-wrapper">
-<div class="weather-app">
-    <div class="overview">
-    <h1 id="city">
-        New York
-    </h1>
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <form id="search-form" class="mb-3">
+                     <div class="row">
+                        <div class="col-9">
+                            <input 
+                                type="search" 
+                                placeholder="Type a city name."
+                                class = "form-control"
+                            />
+                            </div>
+                            <div class="col-3">
+                                <input type="submit" value="Search" class="btn btn-primary w-100">
+                            </div>
+                        </div>
+                    
+                </form>
+                <div class="overview">
+                    <h1 id="city">New York</h1>
+                    <ul>
+                        <li>Last updated: <span id="date">Friday, 10:00</span></li>
+                        <li id="description">Clear</li>
+                    </ul>
+                </div>
 
-    <ul>
-        <li>Last updated: <span id="date">Friday, 10:00</span></li>
-        <li id="description">Clear</li>
+            <div class="row">
+                <div class="col-6">
+                        <div class="clearfix weather-temperature">
+                        <img id="icon" src="images/sunglasses.png" 
+                        alt="yellow sun with sunglasses" 
+                        class="float-left">
+                        <div class="float-left">
+                                <strong id="temperature">12</strong><span class = "units">°C | <a href="#"> °F </a> </span>
+                        </div>
+                        </div>
+                </div>
+
+                <div class="col-6">
+                    <ul>
+                        <li>Humidity: <span id= "humidity"> 73%</span></li>
+                        <li>Wind: <span id="wind">2</span> km/h</li>
+                    </ul>
+                </div>
+             </div>
+            </div>
     </ul>
-    </div>
-
-        <div class="row">
-            <div class="col-6">
-                    <div class="clearfix weather-temperature">
-                       <img id="icon" src="images/sunglasses.png" 
-                       alt="yellow sun with sunglasses" 
-                       class="float-left">
-                    <div class="float-left">
-                            <strong id="temperature">12</strong><span class = "units">°C | <a href="#"> °F </a> </span>
-                    </div>
-                    </div>
-            </div>
-
-            <div class="col-6">
-                <ul>
-                    <li>Humidity: <span id= "humidity"> 73%</span></li>
-                    <li>Wind: <span id="wind">2</span> km/h</li>
-                </ul>
-            </div>
         </div>
 
-    </ul>
-
- 
-
-</div>
     <small>
         <a href="https://github.com/ah1096/2022-SheCodes-Weather-App-FINAL" target="_blank">
             Open-source code</a>
